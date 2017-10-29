@@ -50,7 +50,7 @@ class WordCounter {
         let doc = editor.document;
 
         if (doc.languageId === "markdown") {
-            let wordCount = this.getWordCount(doc);
+            let wordCount = this._getWordCount(doc);
 
             if (wordCount !== 1) {
                 this._statusBarItem.text = `${wordCount} Words`;
@@ -81,6 +81,7 @@ class WordCounter {
     dispose() {
         this._statusBarItem.dispose();
     }
+
 }
 
 // this method is called when your extension is deactivated
