@@ -1,0 +1,11 @@
+{
+  "name": "vs-code-word-count",
+  "version": "1.0.0",
+  "description": "vs code word count extension",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Patrick Gabala",
+  "license": "ISC"
+}
