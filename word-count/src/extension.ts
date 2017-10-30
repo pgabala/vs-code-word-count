@@ -41,9 +41,9 @@ class WordCounter {
             let wordCount = this._getWordCount(doc);
 
             if (wordCount !== 1) {
-                this._statusBarItem.text = `${wordCount} Words`;
+                this._statusBarItem.text = `$(pencil) ${wordCount} Words`;
             } else {
-                this._statusBarItem.text = '1 Word';
+                this._statusBarItem.text = '$(pencil) 1 Word';
             }
 
             this._statusBarItem.show();
