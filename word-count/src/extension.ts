@@ -13,12 +13,7 @@ export function activate(context: ExtensionContext) {
     let wordCounter = new WordCounter();
     let controller = new WordCounterController(wordCounter);
 
-    let disposable = commands.registerCommand('extension.sayHello', () => {
-        wordCounter.updateWordCount();
-    });
-
     context.subscriptions.push(wordCounter);
-    context.subscriptions.push(disposable);
 }
 
 class WordCounter {
